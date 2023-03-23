@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 public interface IVolante
 {
-    public void FaiVolare(IVolante animale);
+    public void Vola();
 }
 
 public interface INuotante
 {
-    public void FaiNuotare(INuotante animale);
+    public void Nuota();
 }
 
 public abstract class Animale

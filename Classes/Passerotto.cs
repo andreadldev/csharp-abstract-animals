@@ -8,7 +8,7 @@ namespace csharp_abstract_animals.Classes
 {
     public class Passerotto : Animale, IVolante
     {
-        public void FaiVolare(IVolante animale)
+        public void Vola()
         {
             Console.WriteLine("Sto volando!!!");
         }

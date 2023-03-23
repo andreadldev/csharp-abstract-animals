@@ -8,7 +8,7 @@ namespace csharp_abstract_animals.Classes
 {
     public class Delfino : Animale, INuotante
     {
-        public void FaiNuotare(INuotante animale)
+        public void Nuota()
         {
             Console.WriteLine("Sto nuotando!!!");
         }
