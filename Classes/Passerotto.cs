@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals.Classes
 {
-    public class Passerotto : Animale
+    public class Passerotto : Animale, IVolante
     {
+        public void FaiVolare(IVolante animale)
+        {
+            Console.WriteLine("Sto volando!!!");
+        }
         public override void Mangia()
         {
             Console.WriteLine("Bruchi");

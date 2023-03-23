@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals.Classes
 {
-    public class Delfino : Animale
+    public class Delfino : Animale, INuotante
     {
+        public void FaiNuotare(INuotante animale)
+        {
+            Console.WriteLine("Sto nuotando!!!");
+        }
         public override void Mangia()
         {
             Console.WriteLine("Pesci");

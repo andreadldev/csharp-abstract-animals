@@ -4,16 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+public interface IVolante
+{
+    public void FaiVolare(IVolante animale);
+}
 
-    public abstract class Animale
+public interface INuotante
+{
+    public void FaiNuotare(INuotante animale);
+}
+
+public abstract class Animale
+{
+    public void Dormi()
     {
-        public void Dormi()
-        {
-            Console.WriteLine("Zzz");
-        }
-
-        public abstract void Verso();
-
-        public abstract void Mangia();
+        Console.WriteLine("Zzz");
     }
+
+    public abstract void Verso();
+
+    public abstract void Mangia();
+}
 
